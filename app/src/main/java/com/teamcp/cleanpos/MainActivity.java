@@ -1,5 +1,6 @@
 package com.teamcp.cleanpos;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,7 +15,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,33 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.restaurant_korean:
                 Toast.makeText(this, "한식", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_snack:
+                Toast.makeText(this, "분식", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_chinese:
+                Toast.makeText(this, "중식", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_japanese:
+                Toast.makeText(this, "일식", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_asian:
+                Toast.makeText(this, "아시안, 양식", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_chicken:
+                Toast.makeText(this, "치킨", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_pizza:
+                Toast.makeText(this, "피자", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_pork_hocks:
+                Toast.makeText(this, "족발 보쌈", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_night:
+                Toast.makeText(this, "야식", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.restaurant_fastfood:
+                Toast.makeText(this, "패스트푸드", Toast.LENGTH_SHORT).show();
                 return true;
         }
         return super.onOptionsItemSelected(item);
